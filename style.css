@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Tenor+Sans&display=swap');
+
+@import url("components/container.css");
+@import url("components/logo.css");
+@import url("components/btn-profil.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+
+body {
+	font-family: 'Tenor Sans';
+	font-size: 18px;
+	margin: 0px;
+}
+
+h2{
+	font-family: 'Allan', serif;
+	font-size: 30px;
+	font-weight: bold;
+  text-align: center;
+}
+
+a{
+	text-decoration: none;	
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optionally, set width and height for the container */
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    /* Optionally, set maximum width and height for the image */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container > * {
+    margin: 10px 0; /* Optional margin between elements */
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
